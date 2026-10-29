@@ -1,0 +1,284 @@
+/* 墨海研究室｜履歷作品集：霧藍灰 × 玻璃質感
+   Bootstrap 5.3 CSS 應先於本檔載入。 */
+:root {
+    --primary: #487da7;
+    --primary-dark: #315e83;
+    --ink: #243746;
+    --muted: #526b80;
+    --edge: rgba(255, 255, 255, .88);
+    --shadow: 0 12px 30px rgba(48, 87, 119, .10);
+}
+
+/* 01｜基本樣式 */
+html { scroll-behavior: smooth; }
+body {
+    min-height: 100vh;
+    margin: 0;
+    color: var(--ink);
+    line-height: 1.7;
+    background: linear-gradient(135deg, #eaf4fc 0%, #d4e5f4 48%, #f4f7fb 100%) fixed;
+}
+h1, h2, h3 { color: var(--ink); font-weight: 700; }
+a { color: var(--primary); }
+a:hover { color: var(--primary-dark); }
+#about, #projects, #experience { scroll-margin-top: 24px; }
+
+/* 02｜墨海研究室導覽列 */
+.site-header.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 18px 28px;
+    margin-top: 20px;
+    margin-bottom: 28px;
+    background: rgba(255, 255, 255, .76);
+    border: 1px solid var(--edge);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(48, 87, 119, .10);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+}
+.site-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    color: var(--ink);
+    text-decoration: none;
+}
+.site-brand:hover { color: var(--primary-dark); }
+.site-brand span { font-size: 1.25rem; font-weight: 800; }
+.site-brand small { font-size: .75rem; color: #6a8296; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 24px; }
+.site-nav a {
+    color: #315d7b;
+    font-weight: 700;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-color .2s ease;
+}
+.site-nav a:hover, .site-nav a:focus-visible { border-bottom-color: var(--primary); }
+
+/* 03｜三個主要區塊標題 */
+#about > h2, #projects > h2, #experience > h2 {
+    color: var(--primary);
+    font-size: clamp(1.7rem, 3vw, 2.2rem);
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+/* Bootstrap 的 text-primary 使用 !important；在此特別覆寫一次 */
+#projects > h2.text-primary { color: var(--primary) !important; }
+
+/* 04｜關於我與個人照片 */
+#about {
+    padding: 32px 38px;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, .78);
+    border: 1px solid var(--edge);
+    border-left: 5px solid #83b8d4;
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+}
+.about-intro { display: flex; align-items: center; gap: 36px; }
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+    object-fit: cover;
+    object-position: center 35%;
+    border: 5px solid rgba(255, 255, 255, .95);
+    border-radius: 50%;
+    box-shadow: 0 12px 28px rgba(72, 125, 167, .22);
+}
+.about-content { flex: 1; min-width: 0; }
+#about .about-content h3 {
+    color: var(--ink);
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+#about .about-content p {
+    max-width: 75ch;
+    margin-bottom: 20px;
+    color: var(--muted);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+#about .about-content .career-direction {
+    color: var(--primary);
+    font-weight: 700;
+}
+#about a {
+    color: var(--primary-dark);
+    font-weight: 600;
+    text-decoration-color: currentColor;
+    text-underline-offset: 5px;
+}
+
+/* 05｜三張統一泡泡玻璃作品卡片 */
+#projects .card {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 28px;
+    background: rgba(249, 252, 255, .78);
+    border: 1px solid var(--edge);
+    border-radius: 32px;
+    box-shadow: 0 12px 26px rgba(54, 92, 125, .12),
+                0 3px 8px rgba(54, 92, 125, .05),
+                inset 0 2px 1px rgba(255, 255, 255, .95);
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+#projects .card-body { padding: clamp(20px, 3vw, 32px); }
+#projects .card h3 { margin-bottom: 12px; }
+#projects .card p { margin-bottom: 18px; }
+.project-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 18px;
+    border: 1px solid rgba(255, 255, 255, .72);
+    border-radius: 18px;
+}
+#projects .card ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-left: 0;
+    margin-bottom: 22px;
+    list-style: none;
+}
+#projects .card li {
+    padding: 5px 12px;
+    color: var(--primary-dark);
+    font-size: .9rem;
+    font-weight: 500;
+    background: rgba(255, 255, 255, .62);
+    border: 1px solid rgba(133, 170, 195, .3);
+    border-radius: 999px;
+}
+.project-links { display: flex; flex-wrap: wrap; gap: 12px; }
+.project-links .btn {
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.project-links .btn-primary {
+    color: #fff;
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+.project-links .btn-primary:hover,
+.project-links .btn-primary:focus-visible {
+    color: #fff;
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+.project-links .btn-outline-primary,
+.project-links .btn-outline-secondary {
+    color: var(--primary-dark);
+    background: rgba(255, 255, 255, .42);
+    border-color: var(--primary);
+}
+.project-links .btn-outline-primary:hover,
+.project-links .btn-outline-secondary:hover {
+    color: #fff;
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+/* 06｜學經歷時間軸 */
+#experience { margin: 48px 0; }
+.experience-group {
+    padding: 28px;
+    margin-bottom: 24px;
+    background: rgba(255, 255, 255, .72);
+    border: 1px solid var(--edge);
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+}
+.experience-group h3 { color: var(--primary-dark); font-weight: 800; margin-bottom: 24px; }
+.history-item { margin: 0 0 24px 8px; padding-left: 20px; border-left: 3px solid #83b8d4; }
+.history-item:last-child { margin-bottom: 0; }
+.history-item h4 { color: var(--ink); font-size: 1.1rem; font-weight: 700; }
+.history-item p { color: var(--muted); line-height: 1.8; margin-bottom: 6px; }
+
+/* 07｜頁尾及選用的返回頂部按鈕 */
+footer { max-width: 1140px; margin: 0 auto; padding: 28px 16px 36px; text-align: center; color: var(--muted); }
+footer p { margin: 0; }
+#back-to-top {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 20;
+    width: 44px;
+    height: 44px;
+    color: #fff;
+    background: rgba(72, 125, 167, .92);
+    border: 1px solid var(--edge);
+    border-radius: 50%;
+    box-shadow: 0 8px 18px rgba(54, 92, 125, .20);
+    cursor: pointer;
+}
+#back-to-top:hover { background: var(--primary-dark); }
+.site-nav a:focus-visible, .project-links .btn:focus-visible,
+#about a:focus-visible, #back-to-top:focus-visible {
+    outline: 3px solid var(--primary-dark);
+    outline-offset: 3px;
+}
+
+/* 08｜桌面互動、手機排版與無障礙 */
+@media (hover: hover) {
+    #projects .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 18px 36px rgba(54, 92, 125, .16),
+                    0 6px 12px rgba(54, 92, 125, .06),
+                    inset 0 2px 1px rgba(255, 255, 255, .95);
+    }
+}
+@media (max-width: 768px) {
+    .about-intro { flex-direction: column; text-align: center; gap: 20px; }
+    .profile-photo { width: 140px; height: 140px; }
+}
+@media (max-width: 576px) {
+    body { background-attachment: scroll; }
+    .site-header.container { padding: 16px 20px; margin-top: 12px; margin-bottom: 20px; }
+    .site-nav { gap: 12px; }
+    .site-nav a { font-size: .9rem; }
+    #about { padding: 24px 20px; border-radius: 18px; }
+    #projects .card { border-radius: 24px; margin-bottom: 20px; }
+    #projects .card-body, .experience-group { padding: 20px; }
+    .experience-group { border-radius: 18px; }
+    .project-image { border-radius: 12px; }
+    .project-links .btn { max-width: 100%; white-space: normal; }
+    #back-to-top { right: 14px; bottom: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    #projects .card { transition: none; }
+    #projects .card:hover { transform: none; }
+}
+
+
+/* 手機版：導覽列上下排列 */
+@media (max-width: 576px) {
+    .site-header.container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .site-nav {
+        justify-content: space-between;
+        gap: 8px;
+    }
+}

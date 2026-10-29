@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>張繕薇｜個人履歷與作品集</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<header class="site-header container">
+    <a class="site-brand" href="#about">
+        <span>🌊 墨海研究室</span>
+        <small>guan-a311669</small>
+    </a>
+
+    <nav class="site-nav" aria-label="主要導覽">
+        <a href="#about">關於我</a>
+        <a href="#projects">精選作品</a>
+        <a href="#experience">學經歷</a>
+    </nav>
+</header>
+
+
+<main class="container">
+     
+<section id="about">
+    <h2>關於我</h2>
+    <div class="about-intro">
+        <img
+            src="images/LINE_ALBUM_證件照_260514_1.jpg"
+            alt="張繕薇個人照片"
+            class="profile-photo"
+        >
+  
+        <div class="about-content">
+            
+            <h3>張繕薇 Tako</h3>
+            <p class="career-direction">
+                FDE 前線部署工程師｜AI 應用與資料分析
+            </p>
+
+            <p>
+                我具護理與視光背景，曾接觸醫療照護及服務工作，
+                累積觀察問題、理解使用者需求與溝通協調的經驗。
+                因對問題分析與技術應用產生興趣，投入資料分析及 AI 領域，
+                希望將醫療情境理解轉化為跨域優勢。
+            </p>
+
+            <p>
+                我重視實作、團隊溝通與持續學習，
+                希望在真實專案中累積需求分析、
+                技術整合及獨立解決問題的能力。
+            </p>
+
+            <a href="https://github.com/guan-a311669"
+               target="_blank"
+               rel="noopener noreferrer">
+                查看我的 GitHub
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<section id="projects">
+    <h2 class="text-primary">精選作品</h2>
+
+<article class="card mb-4">
+    <div class="card-body">
+        <h3>醫療門診分析儀表板</h3>
+        <p>整合醫院、科別與醫師等資訊，以互動篩選呈現門診量、病患結構及付款分
+        布，協助掌握醫療服務概況。
+        </p>
+        
+<img
+    src="images/powerbi.png"
+    alt="醫療門診分析 Power BI 儀表板畫面"
+    class="project-image mb-3"
+>
+        <ul>
+            <li>Excel</li>
+            <li>Power Query</li>
+            <li>Power BI</li>
+            <li>DAX</li>
+        </ul>
+        
+        
+        <div class="project-links">
+            <a class="btn btn-primary" href="https://app.powerbi.com/view?r=eyJrIjoiMmZlMWUzMTUtODgzNS00YzIyLWIzZDktMmJmNWIwNWY2ODg0IiwidCI6IjA2ZTY5ZDRmLTU5YTEtNGEzNC05NTc1LTE4ZDk4ZDhiMDRhYiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer" class="project-link">線上體驗 Demo</a>
+            <a class="btn btn-outline-primary" href="https://github.com/guan-a311669/Healthcare-Outpatient-Analytics-Dashboard" target="_blank" rel="noopener noreferrer" class="project-link">查看 GitHub 專案</a>
+
+        </div>
+
+</div>
+    <article class="card mb-4">
+        <div class="card-body">
+        <h3>AI 心血管風險預測系統</h3>
+        <p>使用公開心血管資料(UCI)進行分析與模型比較，製作可輸入個人資料、查看風險
+        預測結果的互動介面。</p>
+
+    <img
+    src="images/heart.png"
+    alt="心血管風險預測系統封面圖"
+    class="project-image"
+>
+        <ul>
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>Scikit-learn</li>
+            <li>SQLite</li>
+            <li>Streamlit</li>
+            <li>Plotly</li>
+        </ul>
+        <div class="project-links">
+        <a class="btn btn-primary" href="https://ai-hearthealth-system-3zritgzsxcw5gzhfvxzcsj.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-link">線上體驗 Demo</a>
+        <a class="btn btn-outline-primary" href="https://github.com/guan-a311669/AI-HeartHealth-System" target="_blank" rel="noopener noreferrer" class="project-link">查看 GitHub 專案</a>
+       
+    </div>
+    </div>
+</article>
+
+<article class="card mb-4">
+    <div class="card-body">
+        <h3>AI 台股智慧分析平台</h3>
+        <p>整合約 40 檔股票、近三年資料，提供個股查詢、技術指標、股票篩選與模型
+        預測，將分析流程轉為互動應用。
+        </p>
+        
+    <img
+    src="images/stock.png"
+    alt="台股智慧分析平台封面圖"
+    class="project-image"
+>
+
+        <ul>
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>SQLite</li>
+            <li>Scikit-learn</li>
+            <li>XGBoost</li>
+            <li>LightGBM</li>
+            <li>Streamlit</li>
+            <li>Plotly</li>
+        </ul>
+        
+        <div class="project-links">
+            <a class="btn btn-primary" href="https://ai-taiwan-stock-analysis.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-link">線上體驗 Demo</a>
+            <a class="btn btn-outline-primary" href="https://github.com/guan-a311669/AI-Taiwan-Stock-Analysis-System" target="_blank" rel="noopener noreferrer" class="project-link">查看 GitHub 專案</a>
+        </div>
+        </div>
+    </article>
+    </section>
+
+
+<section id="experience">
+    <h2>學經歷</h2>
+
+    <div class="experience-group">
+        <h3>學歷</h3>
+
+        <div class="history-item">
+            <h4>中臺科技大學｜視光系</h4>
+            <p>學士｜2023 年 2 月畢業</p>
+        </div>
+
+        <div class="history-item">
+            <h4>耕莘健康管理專科學校｜護理科</h4>
+            <p>副學士｜已畢業</p>
+        </div>
+    </div>
+
+    <div class="experience-group">
+        <h3>專業培訓</h3>
+
+        <div class="history-item">
+            <h4>AI 新秀／FDE 培訓</h4>
+            <p>國北護協辦｜2026 年 10 月起，受訓中</p>
+        </div>
+
+        <div class="history-item">
+            <h4>AI 與商業資料分析人才班</h4>
+            <p>2026/04/27－2026/08/07｜已完成</p>
+            <p>Python、SQL、Power BI、機器學習及資料分析專題實作。</p>
+        </div>
+    </div>
+
+    <div class="experience-group">
+        <h3>工作經歷</h3>
+
+        <div class="history-item">
+            <h4>護理助理員｜養護機構</h4>
+            <p>2025/10－2026/03</p>
+            <p>參與住民日常照護、健康觀察及照護紀錄，
+               配合團隊作業與異常回報。</p>
+        </div>
+
+        <div class="history-item">
+            <h4>牙醫助理｜國泰牙醫診所</h4>
+            <p>2023/03－2023/04</p>
+            <p>協助器械準備與消毒、診療支援、
+               病歷紀錄及預約管理。</p>
+        </div>
+    </div>
+</section>
+
+  </main>    
+    <footer>
+        <p>&copy; 2026 張繕薇. All rights reserved.</p>
+    </footer>
+</body>
+</html> 
