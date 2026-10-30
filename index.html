@@ -32,10 +32,11 @@
     <h2>關於我</h2>
     <div class="about-intro">
         <img
-            src="images/LINE_ALBUM_證件照_260514_1.jpg"
-            alt="張繕薇個人照片"
-            class="profile-photo"
-        >
+    src="images/LINE_ALBUM_證件照_260514_1.jpg"
+    alt="張繕薇個人照片"
+    class="profile-photo"
+    decoding="async"
+>
   
         <div class="about-content">
             
@@ -52,20 +53,46 @@
             </p>
 
             <p>
-                我重視實作、團隊溝通與持續學習，
-                希望在真實專案中累積需求分析、
-                技術整合及獨立解決問題的能力。
+                目前持續學習 Python、SQL、資料分析及 AI 應用開發，
+                並透過醫療資料分析、機器學習預測及網站開發等專案，
+                累積實際開發與問題解決的經驗。
             </p>
 
-            <a href="https://github.com/guan-a311669"
-               target="_blank"
-               rel="noopener noreferrer">
-                查看我的 GitHub
-            </a>
-        </div>
+            <p>
+                我重視需求理解、團隊溝通與持續學習，
+                希望朝 FDE 前線部署工程師方向發展，
+                逐步提升系統整合、測試部署及獨立解決問題的能力。
+            </p>
+<div class="contact-links">
+    <a class="contact-btn"
+       href="https://github.com/guan-a311669"
+       target="_blank"
+       rel="noopener noreferrer">
+        查看我的 GitHub
+    </a>
+
+    <a class="contact-btn"
+       href="mailto:a311669@gmail.com">
+        Email 聯絡我
+    </a>
+</div>
     </div>
 </section>
 
+<!-- 專業技能 -->
+<section id="skills" class="container my-5">
+    <h2>專業技能 Skills</h2>
+
+    <div class="skills-list">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Power BI</span>
+        <span class="skill-tag">HTML / CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Git / GitHub</span>
+        <span class="skill-tag">Docker</span>
+    </div>
+</section>
 
 <section id="projects">
     <h2 class="text-primary">精選作品</h2>
@@ -90,14 +117,26 @@
         </ul>
         
         
-        <div class="project-links">
-            <a class="btn btn-primary" href="https://app.powerbi.com/view?r=eyJrIjoiMmZlMWUzMTUtODgzNS00YzIyLWIzZDktMmJmNWIwNWY2ODg0IiwidCI6IjA2ZTY5ZDRmLTU5YTEtNGEzNC05NTc1LTE4ZDk4ZDhiMDRhYiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer" class="project-link">線上體驗 Demo</a>
-            <a class="btn btn-outline-primary" href="https://github.com/guan-a311669/Healthcare-Outpatient-Analytics-Dashboard" target="_blank" rel="noopener noreferrer" class="project-link">查看 GitHub 專案</a>
+<div class="project-links">
+    <a class="btn btn-primary project-link"
+       href="https://app.powerbi.com/view?r=eyJrIjoiMmZlMWUzMTUtODgzNS00YzIyLWIzZDktMmJmNWIwNWY2ODg0IiwidCI6IjA2ZTY5ZDRmLTU5YTEtNGEzNC05NTc1LTE4ZDk4ZDhiMDRhYiIsImMiOjEwfQ%3D%3D"
+       target="_blank"
+       rel="noopener noreferrer">
+        線上體驗 Demo
+    </a>
 
-        </div>
-
+    <a class="btn btn-outline-primary project-link"
+       href="https://github.com/guan-a311669/Healthcare-Outpatient-Analytics-Dashboard"
+       target="_blank"
+       rel="noopener noreferrer">
+        查看 GitHub 專案
+    </a>
 </div>
-    <article class="card mb-4">
+</div>
+</article>
+   
+
+<article class="card mb-4">
         <div class="card-body">
         <h3>AI 心血管風險預測系統</h3>
         <p>使用公開心血管資料(UCI)進行分析與模型比較，製作可輸入個人資料、查看風險
@@ -116,11 +155,22 @@
             <li>Streamlit</li>
             <li>Plotly</li>
         </ul>
-        <div class="project-links">
-        <a class="btn btn-primary" href="https://ai-hearthealth-system-3zritgzsxcw5gzhfvxzcsj.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-link">線上體驗 Demo</a>
-        <a class="btn btn-outline-primary" href="https://github.com/guan-a311669/AI-HeartHealth-System" target="_blank" rel="noopener noreferrer" class="project-link">查看 GitHub 專案</a>
        
-    </div>
+        <div class="project-links">
+    <a class="btn btn-primary project-link"
+       href="https://ai-hearthealth-system-3zritgzsxcw5gzhfvxzcsj.streamlit.app/"
+       target="_blank"
+       rel="noopener noreferrer">
+        線上體驗 Demo
+    </a>
+
+    <a class="btn btn-outline-primary project-link"
+       href="https://github.com/guan-a311669/AI-HeartHealth-System"
+       target="_blank"
+       rel="noopener noreferrer">
+        查看 GitHub 專案
+    </a>
+</div>
     </div>
 </article>
 
@@ -149,9 +199,20 @@
         </ul>
         
         <div class="project-links">
-            <a class="btn btn-primary" href="https://ai-taiwan-stock-analysis.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-link">線上體驗 Demo</a>
-            <a class="btn btn-outline-primary" href="https://github.com/guan-a311669/AI-Taiwan-Stock-Analysis-System" target="_blank" rel="noopener noreferrer" class="project-link">查看 GitHub 專案</a>
-        </div>
+    <a class="btn btn-primary project-link"
+       href="https://ai-taiwan-stock-analysis.streamlit.app/"
+       target="_blank"
+       rel="noopener noreferrer">
+        線上體驗 Demo
+    </a>
+
+    <a class="btn btn-outline-primary project-link"
+       href="https://github.com/guan-a311669/AI-Taiwan-Stock-Analysis-System"
+       target="_blank"
+       rel="noopener noreferrer">
+        查看 GitHub 專案
+    </a>
+</div>
         </div>
     </article>
     </section>
@@ -178,8 +239,8 @@
         <h3>專業培訓</h3>
 
         <div class="history-item">
-            <h4>AI 新秀／FDE 培訓</h4>
-            <p>國北護協辦｜2026 年 10 月起，受訓中</p>
+            <h4>AI 新秀人才培訓｜FDE 前線部署工程師</h4>
+            <p>國立臺北護理健康大學｜2026/10－迄今（受訓中）</p>
         </div>
 
         <div class="history-item">
@@ -195,8 +256,11 @@
         <div class="history-item">
             <h4>護理助理員｜養護機構</h4>
             <p>2025/10－2026/03</p>
-            <p>參與住民日常照護、健康觀察及照護紀錄，
-               配合團隊作業與異常回報。</p>
+            <p>
+    參與住民日常照護、健康觀察與照護紀錄，
+    協助異常狀況回報及跨職類資訊傳遞，
+    培養問題觀察、資訊整理與團隊協作能力。
+</p>
         </div>
 
         <div class="history-item">

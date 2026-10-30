@@ -247,6 +247,9 @@ footer p { margin: 0; }
     }
 }
 @media (max-width: 768px) {
+    .about-content p {
+    text-align: left;
+}
     .about-intro { flex-direction: column; text-align: center; gap: 20px; }
     .profile-photo { width: 140px; height: 140px; }
 }
@@ -280,5 +283,110 @@ footer p { margin: 0; }
     .site-nav {
         justify-content: space-between;
         gap: 8px;
+    }
+}
+
+/* 專業技能區塊 */
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 20px;
+
+    background: rgba(180, 205, 220, 0.25);
+    border: 1px solid rgba(180, 205, 220, 0.5);
+
+    color: #40566b;
+    font-size: 14px;
+    font-weight: 500;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    transition: transform 0.3s ease;
+}
+
+.skill-tag:hover {
+    transform: translateY(-3px);
+}
+/* 關於我：聯絡連結 */
+
+/* 聯絡按鈕容器 */
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 24px;
+}
+
+/* 霧藍灰玻璃按鈕 */
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 22px;
+    border-radius: 18px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(231, 242, 250, 0.85),
+        rgba(184, 211, 229, 0.65)
+    );
+
+    border: 1px solid rgba(255, 255, 255, 0.85);
+
+    color: #345F82;
+    text-decoration: none;
+    font-weight: 600;
+
+    box-shadow:
+        0 6px 16px rgba(54, 92, 125, 0.12),
+        inset 0 1px 1px rgba(255, 255, 255, 0.9);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+/* 滑鼠移入 */
+@media (hover: hover) {
+    .contact-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 22px rgba(54, 92, 125, 0.18);
+        color: #244B6A;
+    }
+}
+
+/* 鍵盤操作 */
+.contact-btn:focus-visible {
+    outline: 3px solid #345F82;
+    outline-offset: 3px;
+}
+
+/* 手機版 */
+@media (max-width: 576px) {
+    .contact-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .contact-btn {
+        padding: 11px 16px;
+        font-size: 14px;
+    }
+}
+
+/* 減少動畫偏好 */
+@media (prefers-reduced-motion: reduce) {
+    .contact-btn {
+        transition: none;
     }
 }
